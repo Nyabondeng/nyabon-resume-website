@@ -1,0 +1,205 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%; /* Set base font size */
+}
+
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif; /* Base font family */
+    line-height: 1.6; /* Line height for readability */
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Text color */
+}
+
+/* Header Style */
+.header {
+    background-color: #007bff; /* Header background */
+    color: #fff; /* Header text color */
+    padding: 1rem; /* Padding for header */
+    display: flex;
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Center align items */
+}
+
+.logo {
+    font-size: 1.5em; /* Logo font size */
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Logo text color */
+}
+
+.navbar {
+    display: flex; /* Flex for navbar */
+}
+
+.navbar a {
+    margin: 0 15px; /* Space between navbar links */
+    color: #fff; /* Navbar link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.navbar a:hover {
+    color: #ddd; /* Color on hover */
+}
+
+#menu-icon {
+    display: none; /* Hide menu icon on desktop */
+}
+
+/* Home Section */
+.home {
+    display: flex; /* Flex layout for home */
+    justify-content: space-between; /* Space between text and image */
+    padding: 2rem; /* Padding for home section */
+    background: #ffffff; /* White background for home */
+}
+
+.home-content {
+    max-width: 50%; /* Limit width of text content */
+}
+
+.home-img img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* About Section */
+.about {
+    display: flex; /* Flex layout */
+    padding: 2rem; /* Padding for about section */
+    background: #e9ecef; /* Light gray background */
+}
+
+.about-img img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hiddenContent {
+    display: none; /* Hidden content initially */
+}
+
+/* Skills Section */
+.skills {
+    padding: 2rem; /* Padding for skills section */
+    background: #ffffff; /* White background */
+}
+
+.skills-content ul {
+    list-style-type: none; /* Remove bullet points */
+}
+
+/* Education Section */
+.education {
+    display: flex; /* Flex layout */
+    padding: 2rem; /* Padding for education section */
+    background: #e9ecef; /* Light gray background */
+}
+
+/* Projects Section */
+.projects {
+    padding: 2rem; /* Padding for projects section */
+    background: #ffffff; /* White background */
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem; /* Padding for contact section */
+    background: #e9ecef; /* Light gray background */
+}
+
+.media a {
+    margin-right: 10px; /* Space between icons */
+    color: #007bff; /* Icon color */
+}
+
+/* Button Styles */
+.btn {
+    background-color: #007bff; /* Button background */
+    color: #fff; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .home-content, .home-img {
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    .header {
+        flex-direction: column; /* Stack header items */
+    }
+
+    #menu-icon {
+        display: block; /* Show menu icon on mobile */
+        font-size: 1.5em; /* Larger icon */
+        cursor: pointer; /* Pointer on hover */
+    }
+
+    .navbar {
+        display: none; /* Hide navbar by default on mobile */
+        flex-direction: column; /* Stack navbar links */
+        width: 100%; /* Full width */
+        background-color: #007bff; /* Background for mobile menu */
+    }
+
+    .navbar.active {
+        display: flex; /* Show navbar when active */
+    }
+
+    .navbar a {
+        margin: 10px 0; /* Space between links */
+    }
+
+    .about, .education, .projects, .contact {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align content */
+    }
+}
+
+/* Additional Responsive Styles */
+@media (max-width: 480px) {
+    .header {
+        padding: 0.5rem; /* Less padding on mobile */
+    }
+
+    .home-content h1 {
+        font-size: 1.8em; /* Adjust font size */
+    }
+
+    .home-content h3 {
+        font-size: 1.2em; /* Adjust font size */
+    }
+}
+/* General Image Styles */
+/* General Image Styles */
+img {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    border-radius: 50%; /* Creates a circular shape   
+   */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    
+        margin: 0 auto;
+      
+  }
+
+  
